@@ -1,0 +1,32 @@
+/* styles/Home.module.css */
+.container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+
+.wallpaper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../src/img/gowWallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4; 
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+
+.content {
+  
+  width: 100%;
+  text-align: center;
+}

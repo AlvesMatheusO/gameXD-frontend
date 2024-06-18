@@ -1,0 +1,66 @@
+.headerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.logoContainer {
+    padding-left: 2rem;
+    flex-grow: 1;
+    
+}
+
+.headerContent {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50rem;
+    background-color: #333333;
+    background: rgba(0, 0, 0, 0.4); /* Fundo transparente */
+    align-items: center;
+}
+
+.menuNav {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 0 0.5rem;
+        transition: background 0.3s;
+        display: inline-block;
+        position: relative;
+
+        & + a {
+            margin-left: 2rem;
+        }
+        
+        &:hover{
+            color: #B57EDC;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.searchContainer {
+    margin-left: 2rem;
+    border-radius: 5rem;
+    background-color: #ffffff;
+    padding: 0.3rem;
+    display: flex; /* Adicionado para usar flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.searchContainer input {
+    border: none; /* Remove a borda padrão do input */
+    outline: none; /* Remove o contorno quando o input está focado */
+    background: #ffffff; /* Define o fundo do input */
+    color: #333333; /* Define a cor do texto dentro do input */
+    width: 100%; /* Faz o input ocupar toda a largura do container */
+}
